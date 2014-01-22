@@ -1,0 +1,409 @@
+/*************************************/
+/** This is the main CSS stylesheet **/
+/*************************************/
+
+/*****************************/
+/* Global style (page, text) */
+/*****************************/
+
+body {
+min-width:980px;
+margin-top:0;
+margin-left:0;
+margin-right:0;
+
+background-color:#000000;
+background-image:url(../img/bg_page.gif);
+background-repeat:repeat;
+
+font-family: Arial,Verdana,sans;
+font-size:13px;
+color:#FFFFFF;
+text-align:center;
+}
+
+div#globalcontainer div#header h1,div#globalcontainer div#header div#banner {
+position:absolute;
+width:100%;
+top:100%;
+left:0;
+height:43px;
+margin:0;
+
+background-color:#313131;
+background-image:url(../img/bg_subheader.gif);
+background-repeat:repeat-x;
+}
+
+a {
+color:#C9C9C9;
+}
+
+a:link {
+text-decoration:underline;
+}
+
+a:hover {
+text-decoration:underline;
+color:#DDDDDD;
+}
+
+a:active {
+text-decoration:none;
+}
+
+div#globalcontainer div#header a:link {
+text-decoration:none;
+}
+
+div#globalcontainer div#header a:visited {
+text-decoration:none;
+}
+
+div#globalcontainer div#header a:hover {
+text-decoration:underline;
+}
+
+div#globalcontainer div#header a:active {
+text-decoration:none;
+}
+
+div#globalcontainer div#header p {
+display:inline;
+vertical-align:middle;
+}
+
+div#globalcontainer div#content p {
+margin-top:0;
+margin-left:10px;
+}
+
+/*************************/
+/* Containers box styles */
+/*************************/
+
+div#globalcontainer {
+text-align:left;
+}
+
+div#globalcontainer div#header {
+position:relative;
+width:100%;
+background-color:#000000;
+background-image:url(../img/bg_header.gif);
+background-repeat:repeat-x;
+height:36px;
+}
+
+div#globalcontainer > div#header {
+height:inherit;
+min-height:36px;
+}
+
+div#globalcontainer div#header div {
+width:980px;
+}
+
+div#globalcontainer div#header > div {
+width:auto;
+min-width:980px;
+}
+
+div#globalcontainer div#header form {
+display:inline;
+vertical-align:middle;
+padding-left:10px;
+}
+
+div#globalcontainer div#header form fieldset {
+display:inline;
+vertical-align:middle;
+border:0px;
+margin:0px;
+padding:0px;
+}
+
+div#globalcontainer div#header form fieldset legend {
+display:none;
+}
+
+div#globalcontainer div#header form fieldset input {
+background:#000;
+color:#FFF;
+border-width:1px;
+}
+
+div#globalcontainer div#header form fieldset input:hover {
+background:#000045;
+border-style:solid;
+border-color:#80BEFF;
+}
+
+div#globalcontainer div#header form fieldset input#submit:hover {
+border:none;
+}
+
+div#globalcontainer div#header form fieldset input#remember {
+background:none;
+}
+
+div#globalcontainer div#header img.separator {
+vertical-align:middle;
+margin-top:3px;
+margin-left:5px;
+}
+
+div#globalcontainer div#header form input, div#globalcontainer div#header form label {
+vertical-align:middle;
+}
+
+div#globalcontainer div#header ul {
+display:inline;
+vertical-align:middle;
+list-style-type:none;
+margin-left:5px;
+margin-right:0px;
+padding:0px;
+color:#C9C9C9;
+}
+
+div#globalcontainer div#header ul li{
+display:inline;
+}
+
+
+div#content {
+position:relative;
+}
+
+div#globalcontainer div#centercolumn {
+margin: 50px 25px 0 256px;
+}
+
+div#globalcontainer div#leftcolumn,div#globalcontainer div#rightcolumn {
+position:absolute;
+width:196px;
+top:0;
+}
+
+div#globalcontainer div#leftcolumn {
+margin-left:30px;
+}
+
+div#globalcontainer #rightcolumn {
+right:30px;
+}
+
+/*************************************/
+/* Column box styles (more specific) */
+/*************************************/
+
+div#content div.newsblock {
+background-color:#DCDCDC;
+margin-bottom:10px;
+}
+
+div#content div.newsblock div.columntitle {
+height:18px;
+padding:10px;
+border:1px solid #000;
+background-image:url(../img/bg_columntitle.gif);
+}
+
+div#globalcontainer div#content div.newsblock div.columncontentzone, div#globalcontainer div#content div.newsblock div.columncommentszone {
+color:#000;
+padding:0 10px;
+border-left:1px solid #FFF;
+border-right:1px solid #FFF;
+}
+
+div#globalcontainer div#content div.newsblock div.columncommentszone {
+border-top:1px solid #FFF;
+border-bottom:1px solid #FFF;
+background-color:#5E5E5E;
+}
+
+/* Column text styles */
+
+div#content div.newsblock div.columntitle h2, div#content div.newsblock div.columntitle h1 {
+display:inline;
+margin:0;
+font-size:1.3em;
+}
+
+div#content div#rightcolumn h2, div#content div#leftcolumn h2 {
+margin:0;
+font-size:1.3em;
+border-bottom:1px solid #B0B0B0;
+}
+
+div#content div.newsblock div.columntitle h2 span.author {
+margin-left:10px;
+font-weight:normal;
+font-size:0.7em;
+}
+
+div#globalcontainer div#content div.newsblock div.columncontentzone div.galleryitem {
+display:inline;
+}
+
+div#globalcontainer div#content div.newsblock div.columncontentzone div.galleryitem p.galleryimage {
+display:table-cell;
+border:1px solid #000000;
+}
+
+div#globalcontainer div#content div.newsblock div.columncontentzone div.galleryitem p.gallerycaption {
+display:table-caption;
+caption-side:bottom;
+text-align:center;
+}
+
+
+div#globalcontainer div#content div.newsblock div.columncontentzone img {
+margin:5px;
+}
+
+div#globalcontainer div#content div.newsblock div.columncontentzone ul, div#globalcontainer div#content div.newsblock div.columncontentzone ol {
+list-style-position:inside;
+margin-left:5px;
+margin-right:5px;
+padding-left:0px;
+padding-top:10px;
+}
+
+div#globalcontainer div#content div.newsblock div.columncontentzone lh {
+font-weight:bold;
+margin-left:0em;
+}
+
+div#globalcontainer div#content div.newsblock div.columncontentzone li {
+margin-left:1em;
+}
+
+div#globalcontainer div#content div.newsblock div.columncontentzone p {
+margin-left:5px;
+margin-right:5px;
+padding-top:10px;
+}
+
+div#globalcontainer div#content div.newsblock div.columncontentzone table {
+border: 1px solid #000000;
+border-collapse: collapse;
+border-spacing: 0px;
+margin-top: 5px;
+margin-bottom: 5px;
+width: 100%;
+}
+
+div#globalcontainer div#content div.newsblock div.columncontentzone tbody td {
+border: 1px dotted #000000;
+padding: 5px;
+vertical-align: top;
+}
+
+div#globalcontainer div#content div.newsblock div.columncontentzone thead th {
+border: 1px solid #000000;
+text-align: center;
+vertical-align: top;
+}
+
+div#globalcontainer div#content div.newsblock div.columncontentzone a {
+color:#414141;
+}
+
+div#globalcontainer div#content div.newsblock div.columncommentszone p {
+color:#FFF;
+margin-left:0px;
+margin-top:6px;
+margin-bottom:6px;
+padding-bottom:3px;
+}
+
+div#globalcontainer div#content div.newsblock div.columncommentszone p em {
+font-weight:bold;
+}
+
+/* Quicklinks */
+
+ul.quicklinks {
+list-style-type:none;
+margin-top:5px;
+margin-left:5px;
+margin-right:5px;
+padding:0;
+}
+
+ul.quicklinks li {
+margin-top:5px;
+}
+
+ul.quicklinks li a {
+text-decoration:none;
+}
+
+ul.quicklinks li a:link {
+text-decoration:none;
+}
+
+ul.quicklinks li a:visited {
+text-decoration:none;
+}
+
+ul.quicklinks li a:hover {
+text-decoration:underline;
+color:#FFF;
+}
+
+/* Left menu styles */
+
+div#globalcontainer div#leftcolumn ul.sections {
+list-style-type:none;
+margin-top:5px;
+margin-left:0;
+margin-right:0;
+padding:0;
+border-bottom:1px solid #B0B0B0;
+border-top:1px solid #B0B0B0;
+border-left:1px solid #B0B0B0;
+border-right:1px solid #B0B0B0;
+}
+
+div#globalcontainer div#leftcolumn ul.sections li a {
+display:block;
+padding:5px 10px;
+margin:0px;
+background-color:#191919;
+background-image:url(../img/bg_menu.gif);
+text-decoration:none;
+}
+
+div#globalcontainer div#leftcolumn ul.sections li a:link {
+border-top:1px dotted #707070;
+border-bottom:1px dotted #707070;
+border-left:1px dotted #B0B0B0;
+border-right:1px dotted #B0B0B0;
+}
+
+div#globalcontainer div#leftcolumn ul.sections li a:visited {
+border-top:1px dotted #707070;
+border-bottom:1px dotted #707070;
+border-left:1px dotted #B0B0B0;
+border-right:1px dotted #B0B0B0;
+}
+
+div#globalcontainer div#leftcolumn ul.sections li a:hover {
+color:#0078FF;
+border-top:1px solid #0078FF;
+border-bottom:1px solid #0078FF;
+border-left:1px solid #0078FF;
+border-right:1px solid #0078FF;
+}
+
+div#globalcontainer div#leftcolumn ul.sections li a:active {
+color:#97C8FF;
+padding:5px 9px;
+border-top:1px solid #97C8FF;
+border-bottom:1px solid #97C8FF;
+border-left:2px solid #97C8FF;
+border-right:2px solid #97C8FF;
+}
